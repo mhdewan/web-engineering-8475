@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Assignment 2</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body onload="fortune()">
+   <h1>Part-1</h1>
+   <p id="fortune"></p>
+    
+    <h1>Part-2</h1>
+    <h2>Tk to Others currency conversion</h2>
+   <form name="converter">
+        <table border="0">
+        <tr>
+        <td>Tk: </td><td><input type="text" name="tk" onChange="tkConverter()" /></td>
+        </tr>
+        <tr>
+        <td>Euro: </td><td><input type="text" name="euro" onChange="euroConverter()" /></td>
+        </tr>
+        <tr>
+        <td>US Dollar: </td><td><input type="text" name="dollar" onChange="dollarConverter()" /></td>
+        </tr>
+        <tr>
+        <td>British Pound:</td><td><input type="text" name="pound" onChange="poundConverter()" /></td>
+        </tr>
+        <tr>
+        <td>Japanese Yen: </td><td><input type="text" name="yen" onChange="yenConverter()" /></td>
+        </tr>
+        <tr>
+        <td colspan="2" align="center"><input type="button" value="Convert!" /></td>
+        </tr>
+        </table>
+    </form>
+    
+    
+    <h1>Part-3</h1>
+    <h2>Quiz Question</h2>
+    <form action="/action_page.php">
+        <p>1.Who holds the Major League Baseball record for most home runs in a season?</p>
+            <input type="radio" name="1" value="a">A. Barry Bonds<br>
+            <input type="radio" name="1" value="b">B. James Bond<br>
+            <input type="radio" name="1" value="c">C. Sachin Tendulkar<br>  
+            <p id="ans1" style="color:green"></p>
+        <p>2.Who was the first person to set foot on the moon?</p>
+            <input type="radio" name="2" value="a"> A. Neil Armstrong<br>
+            <input type="radio" name="2" value="b"> B. Shahrukh Khan<br>
+            <input type="radio" name="2" value="c"> C. None of this<br>  
+            <p id="ans2" style="color:green"></p>
+        <p>3.What is the capital of Bangladesh?</p>
+            <input type="radio" name="3" value="a">A. Gazipur<br>
+            <input type="radio" name="3" value="b">B. Dhaka<br>
+            <input type="radio" name="3" value="c">C. Comilla<br>  
+            <p id="ans3" style="color:green"></p>
+        <p>4.In what year was University of Liverpool founded?</p>
+            <input type="radio" name="4" value="a"> A. 1250<br>
+            <input type="radio" name="4" value="b"> B. 1881<br>
+            <input type="radio" name="4" value="c"> C. 1890<br>  
+            <p id="ans4" style="color:green"></p>
+        <p>5.How many ounces in a pound?</p>
+            <input type="radio" name="5" value="a">A. 10<br>
+            <input type="radio" name="5" value="b">B. 20<br>
+            <input type="radio" name="5" value="c">C. 16<br>  
+            <p id="ans5" style="color:green;"></p>
+        <h3 style="color:green" id="result"></h3>
+        <input type="button" value="Submit" onclick="quizQuestion()" />
+		</form>
+    
+    
+    <script src="js/script.js"></script>
+</body>
+</html>
